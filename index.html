@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sarah Hillary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome for crown icon -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* Align items at the top */
+            background-color: #f9f9f9;
+            overflow-y: auto;
+            /* Allow scrolling if content overflows */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('b781012b-dc3f-4f1c-b9a4-5fb4fc835e11.jpeg') no-repeat center center/cover;
+            z-index: -1;
+            filter: blur(4px);
+        }
+
+        .dark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .row {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Left column: remove padding for large screens */
+        .col-left {
+            position: relative;
+            padding: 0;
+            /* No padding on the left */
+        }
+
+        .col-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure the image covers the space */
+            border-radius: 20px;
+            /* Add curved edges */
+            display: block;
+            /* Ensure the image behaves like a block-level element */
+        }
+
+        @media (max-width: 767px) {
+            .col-left img {
+                object-fit: contain;
+                /* Make sure the whole image is visible on small screens */
+                max-width: 90%;
+                /* Limit the width to 90% on small screens */
+                max-height: 80vh;
+                /* Limit the height to 80% of the viewport */
+                margin: 0 auto;
+                /* Center the image */
+                display: block;
+                /* Ensures block-level element */
+                border-radius: 20px;
+                /* Curved edges on small screens as well */
+            }
+        }
+
+        .col-right {
+            text-align: center;
+            /* Center the content */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #FFD700;
+            margin-bottom: 30px;
+        }
+
+        .cake-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            /* Adds space around the icon */
+            color: yellow;
+            /* Sets the icon color to yellow */
+        }
+
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 500px;
+            /* Optional: Ensure the text doesn't stretch too far */
+        }
+
+        .btn-celebrate {
+            background-color: #FF4500;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            transform: skew(-15deg);
+            /* This will slant the button */
+        }
+
+        .btn-celebrate:hover {
+            background-color: #FF6347;
+        }
+
+        .curved-image {
+            border-radius: 15px;
+        }
+
+        @media (min-width: 992px) {
+
+            /* On large screens, ensure the photo stretches to the left edge */
+            .container {
+                padding: 0;
+                /* No padding on the container */
+            }
+
+            .col-left {
+                padding-left: 0;
+                /* Remove padding for large screens */
+            }
+
+            .col-right {
+                padding-left: 20px;
+            }
+        }
+
+        .crown-icon {
+            font-size: 3rem;
+            color: #FFD700;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="dark-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <!-- Left column for photo -->
+            <div class="col-md-6 col-left">
+                <img class="curved-image" src="WhatsApp Image 2025-01-14 at 20.34.49_9ef09f57.jpg" alt="Sarah's photo">
+            </div>
+            <!-- Right column for content -->
+            <div class="col-md-6 col-right">
+                <h1>
+                    Happy Birthday
+                </h1>
+                <h2>Sarah Hillary <i class="fas fa-crown crown-icon"></i></h2> <!-- Added crown icon -->
+                <p>Wishing you a day brimming with love, laughter, and all the joy in the world. Sarah, you are an
+                    extraordinary person, and today we celebrate the incredible soul that you are. May this birthday be
+                    just the beginning of an amazing year ahead. Greater days are waiting for you, filled with even more
+                    beauty, success, and happiness. Enjoy every moment!</p>
+                <i class="fas fa-birthday-cake cake-icon"></i>
+                <btn class="btn-celebrate">Du Bist Ein Schatz!</btn>
+
+                <p style="text-align: center; font-size: 0.8rem; color: #aaa; margin-top: 60px;">&copy; 2025 Celebrating
+                    HILLARY. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
